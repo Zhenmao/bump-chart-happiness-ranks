@@ -4,4 +4,3 @@
 
 - Data source: [World Happiness Report](https://worldhappiness.report/)
 - Visualization inspiration: [How America's 'places to be' have shifted over the past 100 years](https://www.washingtonpost.com/nation/interactive/2021/census-population-changes/)
-- Icons made by [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/)
