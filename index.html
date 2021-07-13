@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bump Chart of Happiness Ranks</title>
+    <!-- Google Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Select2 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/bump-chart.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="content">World Happiness Ranks</h1>
+      <div class="content">
+        <p>
+          The ranks are based on data extracted from the yearly World Happiness
+          Report. The World Happiness Report is a publication of the Sustainable
+          Development Solutions Network, powered by data from the Gallup World
+          Poll and Lloyd’s Register Foundation, who provided access to the World
+          Risk Poll. The 2021 Report includes data from the ICL-YouGov Behavior
+          Tracker as part of the COVID Data Hub from the Institute of Global
+          Health Innovation.
+        </p>
+      </div>
+      <div class="content sticky">
+        <label for="names-select"
+          >Select one or more to highlight and compare</label
+        >
+        <select
+          id="names-select"
+          multiple
+          data-placeholder="Type to search..."
+          data-allow-clear="true"
+          data-width="100%"
+        ></select>
+      </div>
+      <div class="visualization">
+        <div id="bump-chart"></div>
+      </div>
+    </main>
+    <footer>
+      <ul role="list" class="content">
+        <li>
+          Data source:
+          <a href="https://worldhappiness.report/">World Happiness Report</a>
+        </li>
+        <li>
+          Visualization inspiration:
+          <a
+            href="https://www.washingtonpost.com/nation/interactive/2021/census-population-changes/"
+            >How America's 'places to be' have shifted over the past 100
+            years</a
+          >
+        </li>
+        <li>
+          Icons made by
+          <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <!-- D3 JS -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/process-data.js"></script>
+    <script src="js/multiple-select.js"></script>
+    <script src="js/bump-chart.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

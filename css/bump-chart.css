@@ -1,0 +1,48 @@
+.bump-chart .link {
+  fill: none;
+}
+
+.bump-chart .link__bg {
+  stroke: #fff;
+}
+
+.bump-chart .link__fg {
+  stroke: #bdbdbd;
+}
+
+.bump-chart .link__fg.increase {
+  stroke: #00a8e8;
+}
+
+.bump-chart .link__fg.decrease {
+  stroke: #ed3b9c;
+}
+
+.bump-chart .patches {
+  pointer-events: none;
+  fill: #fff;
+}
+
+.bump-chart .node__circle {
+  fill: #bdbdbd;
+}
+
+.bump-chart .node__circle.increase {
+  fill: #00a8e8;
+}
+
+.bump-chart .node__circle.decrease {
+  fill: #ed3b9c;
+}
+
+.bump-chart .node__label {
+  fill: #616161;
+}
+
+.bump-chart .node__label.increase {
+  fill: #00a8e8;
+}
+
+.bump-chart .node__label.decrease {
+  fill: #ed3b9c;
+}
